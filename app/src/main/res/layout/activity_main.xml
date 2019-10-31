@@ -7,6 +7,7 @@
     tools:context=".MainActivity"
     android:background="@drawable/gradient">
 
+
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="249dp"
@@ -14,12 +15,12 @@
         android:layout_above="@+id/takePicBtn"
         android:layout_centerHorizontal="true"
         android:layout_marginStart="50dp"
-        android:layout_marginTop="70dp"
+        android:layout_marginTop="170dp"
         android:layout_marginEnd="51dp"
         android:layout_marginBottom="731dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.688"
+        app:layout_constraintHorizontal_bias="0.508"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
@@ -27,7 +28,7 @@
     <Button
         android:id="@+id/takePicBtn"
         android:layout_width="240dp"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
         android:layout_marginTop="429dp"
         android:layout_marginBottom="114dp"
         android:background="@drawable/button"
@@ -38,6 +39,21 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/take_photo_text"
+        android:layout_width="360dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="92dp"
+        android:layout_marginBottom="642dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.035"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/imageView"
+        app:layout_constraintVertical_bias="0.867"
+        android:text="Click here to take a photo"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
